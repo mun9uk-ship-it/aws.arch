@@ -1,0 +1,23 @@
+# 1. Secret Configuration (CRITICAL)
+config.php
+
+# 2. Environment Variables
+.env
+.env.local
+.env.*
+
+# 3. System Files
+.DS_Store
+Thumbs.db
+
+# 4. Logs and Temp Files
+*.log
+data/update.log
+data/prices.json.tmp
+
+# 5. Dependencies (if you ever use npm/composer)
+node_modules/
+vendor/
+
+# 6. VS Code settings
+.vscode/

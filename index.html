@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Velo Advisor – AWS Service Advisor</title>
+<meta name="description" content="Tell Velo Advisor what you are building. It recommends AWS services, explains them for beginners, developers or architects, draws the architecture and estimates the cost.">
+<meta name="theme-color" content="#0A0E1A">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header>
+  <div class="brand"><div class="logo">V</div><div><b>Velo Advisor</b><small id="tagline"></small></div></div>
+  <div class="ctl"><label id="lblRegion" for="region"></label><select id="region"></select></div>
+  <div class="ctl"><label id="lblLang" for="lang"></label><select id="lang"></select></div>
+  <div class="ctl"><label id="lblCur" for="cur"></label><select id="cur"></select></div>
+  <button class="btn" id="btnShare"></button><button class="btn" id="btnPrint"></button>
+</header>
+<div class="layout">
+  <aside>
+    <nav id="nav"></nav>
+    <div class="side-extra">
+      <div class="side-h" id="tplH"></div><div id="tpls"></div>
+      <div class="side-h" id="kbH"></div>
+      <div class="sm mu"><kbd>/</kbd> search · <kbd>1</kbd>–<kbd>4</kbd> tabs<br><kbd>P</kbd> print · <kbd>?</kbd> help · <kbd>Shift</kbd>+<kbd>R</kbd> reset</div>
+    </div>
+  </aside>
+  <main id="work" aria-live="polite"></main>
+  <section class="est" id="est"></section>
+</div>
+<footer>Velo Advisor · velosights.com · <span id="priceNote"></span></footer>
+<div class="modal" id="help"><div><h3 id="helpT"></h3><p class="sm"><kbd>/</kbd> focus search<br><kbd>1</kbd> Search · <kbd>2</kbd> Advisor · <kbd>3</kbd> Recommendations · <kbd>4</kbd> Architecture<br><kbd>M</kbd> monthly/yearly · <kbd>V</kbd> VAT<br><kbd>P</kbd> print · <kbd>Shift+R</kbd> reset all · <kbd>Esc</kbd> close</p><button class="btn" id="helpX"></button></div></div>
+<div class="toast" id="toast"></div>
+<script src="assets/services.js"></script>
+<script src="assets/i18n.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
